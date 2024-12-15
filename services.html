@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - TurboTech Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2647',
+                        secondary: '#F1F5F9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <header class="bg-primary text-white">
+        <nav class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">TurboTech Engineering</a>
+            <button class="lg:hidden" id="menu-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full lg:flex lg:w-auto lg:space-x-4" id="mobile-menu">
+                <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Home</a>
+                <a href="services.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Services</a>
+                <a href="projects.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Projects</a>
+                <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">About</a>
+                <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Services Header -->
+        <section class="bg-secondary py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">Our Services</h1>
+                <p class="text-lg md:text-xl text-center max-w-3xl mx-auto">Discover our comprehensive range of engineering services designed to meet your unique needs and drive innovation.</p>
+            </div>
+        </section>
+
+        <!-- Service Categories -->
+        <section class="py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold mb-4">Mechanical Engineering</h2>
+                        <ul class="space-y-2">
+                            <li><a href="service-mechanical.html" class="text-primary hover:underline">Product Design</a></li>
+                            <li><a href="service-mechanical.html#simulation" class="text-primary hover:underline">3D Modeling & Simulation</a></li>
+                            <li><a href="service-mechanical.html#analysis" class="text-primary hover:underline">Structural Analysis</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold mb-4">Electrical Engineering</h2>
+                        <ul class="space-y-2">
+                            <li><a href="service-electrical.html" class="text-primary hover:underline">Circuit Design</a></li>
+                            <li><a href="service-electrical.html#power" class="text-primary hover:underline">Power Systems</a></li>
+                            <li><a href="service-electrical.html#control" class="text-primary hover:underline">Control Systems</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold mb-4">Software Engineering</h2>
+                        <ul class="space-y-2">
+                            <li><a href="service-software.html" class="text-primary hover:underline">Custom Software Development</a></li>
+                            <li><a href="service-software.html#web" class="text-primary hover:underline">Web & Mobile Applications</a></li>
+                            <li><a href="service-software.html#ai" class="text-primary hover:underline">AI & Machine Learning</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold mb-4">Civil Engineering</h2>
+                        <ul class="space-y-2">
+                            <li><a href="service-civil.html" class="text-primary hover:underline">Structural Design</a></li>
+                            <li><a href="service-civil.html#infrastructure" class="text-primary hover:underline">Infrastructure Planning</a></li>
+                            <li><a href="service-civil.html#environmental" class="text-primary hover:underline">Environmental Engineering</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold mb-4">Aerospace Engineering</h2>
+                        <ul class="space-y-2">
+                            <li><a href="service-aerospace.html" class="text-primary hover:underline">Aircraft Design</a></li>
+                            <li><a href="service-aerospace.html#propulsion" class="text-primary hover:underline">Propulsion Systems</a></li>
+                            <li><a href="service-aerospace.html#avionics" class="text-primary hover:underline">Avionics</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold mb-4">Consulting Services</h2>
+                        <ul class="space-y-2">
+                            <li><a href="service-consulting.html" class="text-primary hover:underline">Project Management</a></li>
+                            <li><a href="service-consulting.html#optimization" class="text-primary hover:underline">Process Optimization</a></li>
+                            <li><a href="service-consulting.html#training" class="text-primary hover:underline">Technical Training</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-12 md:py-16 lg:py-20 bg-primary text-white">
+            <div class="container mx-auto px-4 md:px-6 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Need a Custom Solution?</h2>
+                <p class="text-lg md:text-xl mb-6 md:mb-8">Our team of experts is ready to tackle your unique engineering challenges.</p>
+                <a href="contact.html" class="bg-white text-primary px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-base md:text-lg hover:bg-gray-200 transition duration-300 inline-block">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-8 md:py-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">TurboTech Engineering</h3>
+                    <p>Innovative solutions for a better future.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                        <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p>123 Engineering Way<br>Tech City, TC 12345<br>Phone: (123) 456-7890<br>Email: info@turbotech.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300">Facebook</a>
+                        <a href="#" class="hover:text-gray-300">Twitter</a>
+                        <a href="#" class="hover:text-gray-300">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2023 TurboTech Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

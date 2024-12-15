@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - TurboTech Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2647',
+                        secondary: '#F1F5F9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <header class="bg-primary text-white">
+        <nav class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">TurboTech Engineering</a>
+            <button class="lg:hidden" id="menu-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full lg:flex lg:w-auto lg:space-x-4" id="mobile-menu">
+                <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Home</a>
+                <a href="services.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Services</a>
+                <a href="projects.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Projects</a>
+                <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">About</a>
+                <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Details -->
+        <section class="py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Innovative Bridge Design</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <img src="https://source.unsplash.com/random/800x600?bridge" alt="Innovative Bridge" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
+                        <p class="mb-4">Our innovative bridge design project combines cutting-edge engineering techniques with aesthetic appeal to create a landmark structure that not only serves its functional purpose but also becomes a symbol of modern architecture.
+
+Key Features:
+- Innovative use of sustainable materials
+- Advanced structural analysis for optimal strength and stability
+- Integration of smart technologies for real-time monitoring
+- Pedestrian-friendly design with dedicated cycling lanes
+- Energy-efficient lighting systems
+
+Project Status: Completed
+Duration: 24 months
+Client: City of Techville
+
+The bridge spans a total length of 500 meters and connects two previously isolated districts, significantly improving local transportation and commerce. Its unique design, featuring a double helix structure, has already become an iconic part of the city skyline.
+
+Our team of engineers and architects worked closely with city planners and environmental experts to ensure that the bridge not only met all safety and functional requirements but also minimized its environmental impact. The use of recycled materials and the implementation of energy-efficient systems throughout the structure showcase our commitment to sustainable engineering practices.
+
+</p>
+                        <a href="projects.html" class="inline-block mt-4 bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition duration-300">Back to Projects</a>
+                    </div>
+                </div>
+
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-4">Project Gallery</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <img src="https://source.unsplash.com/random/800x600?bridge+construction" alt="Construction Phase" class="w-full h-48 object-cover rounded-lg">
+                        <img src="https://source.unsplash.com/random/800x600?bridge+design" alt="Design Mockup" class="w-full h-48 object-cover rounded-lg">
+                        <img src="https://source.unsplash.com/random/800x600?bridge+night" alt="Night View" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Project Team</h2>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Lead Engineer: Dr. Jane Smith</li>
+                        <li>Architect: John Doe</li>
+                        <li>Structural Analyst: Emily Johnson</li>
+                        <li>Environmental Consultant: Michael Brown</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-8 md:py-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">TurboTech Engineering</h3>
+                    <p>Innovative solutions for a better future.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                        <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p>123 Engineering Way<br>Tech City, TC 12345<br>Phone: (123) 456-7890<br>Email: info@turbotech.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300">Facebook</a>
+                        <a href="#" class="hover:text-gray-300">Twitter</a>
+                        <a href="#" class="hover:text-gray-300">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2023 TurboTech Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

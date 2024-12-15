@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TurboTech Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2647',
+                        secondary: '#F1F5F9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <header class="bg-primary text-white">
+        <nav class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">TurboTech Engineering</a>
+            <button class="lg:hidden" id="menu-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full lg:flex lg:w-auto lg:space-x-4" id="mobile-menu">
+                <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Home</a>
+                <a href="services.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Services</a>
+                <a href="projects.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Projects</a>
+                <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">About</a>
+                <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Header -->
+        <section class="bg-secondary py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">About TurboTech Engineering</h1>
+                <p class="text-lg md:text-xl text-center max-w-3xl mx-auto">Pioneering innovative engineering solutions for a sustainable future.</p>
+            </div>
+        </section>
+
+        <!-- Company Overview -->
+        <section class="py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Our Story</h2>
+                        <p class="mb-4">Founded in 2005, TurboTech Engineering has grown from a small startup to a leading force in the engineering industry. Our journey has been marked by a relentless pursuit of excellence, innovation, and sustainable solutions.</p>
+                        <p>With a team of over 500 skilled professionals across multiple disciplines, we have successfully completed projects in over 30 countries, leaving a lasting impact on infrastructure, technology, and environmental sustainability.</p>
+                    </div>
+                    <div class="order-first md:order-last">
+                        <img src="https://source.unsplash.com/random/800x600?engineering" alt="TurboTech Engineering Team" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission and Vision -->
+        <section class="bg-secondary py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Our Mission</h2>
+                        <p>To deliver cutting-edge engineering solutions that address global challenges, improve quality of life, and drive sustainable development. We are committed to pushing the boundaries of innovation while maintaining the highest standards of quality and safety.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Our Vision</h2>
+                        <p>To be the world's most trusted and respected engineering firm, known for our innovative approach, technical expertise, and commitment to creating a better future for generations to come.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section class="py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Our Core Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Innovation</h3>
+                        <p>Constantly pushing the boundaries of what's possible in engineering.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Integrity</h3>
+                        <p>Upholding the highest ethical standards in all our endeavors.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Sustainability</h3>
+                        <p>Committed to environmentally responsible engineering practices.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Collaboration</h3>
+                        <p>Fostering partnerships and teamwork to achieve exceptional results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Profile Download -->
+        <section class="bg-secondary py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Download Our Company Profile</h2>
+                <p class="mb-6 max-w-2xl mx-auto">Get a comprehensive overview of TurboTech Engineering, our services, and our track record of success. Download our company profile for more information.</p>
+                <a href="#" class="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition duration-300">
+                    <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Download Company Profile (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Our Leadership Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="https://source.unsplash.com/random/200x200?portrait" alt="John Doe" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">John Doe</h3>
+                        <p class="text-gray-600">CEO & Founder</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://source.unsplash.com/random/200x200?woman" alt="Jane Smith" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Jane Smith</h3>
+                        <p class="text-gray-600">Chief Technology Officer</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://source.unsplash.com/random/200x200?man" alt="Mike Johnson" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Mike Johnson</h3>
+                        <p class="text-gray-600">Chief Operations Officer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-8 md:py-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">TurboTech Engineering</h3>
+                    <p>Innovative solutions for a better future.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                        <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p>123 Engineering Way<br>Tech City, TC 12345<br>Phone: (123) 456-7890<br>Email: info@turbotech.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300">Facebook</a>
+                        <a href="#" class="hover:text-gray-300">Twitter</a>
+                        <a href="#" class="hover:text-gray-300">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2023 TurboTech Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

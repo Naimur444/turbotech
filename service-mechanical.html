@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Services - TurboTech Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2647',
+                        secondary: '#F1F5F9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <header class="bg-primary text-white">
+        <nav class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">TurboTech Engineering</a>
+            <button class="lg:hidden" id="menu-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full lg:flex lg:w-auto lg:space-x-4" id="mobile-menu">
+                <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Home</a>
+                <a href="services.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Services</a>
+                <a href="projects.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Projects</a>
+                <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">About</a>
+                <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Service Header -->
+        <section class="bg-secondary py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">Mechanical Engineering Services</h1>
+                <p class="text-lg md:text-xl text-center max-w-3xl mx-auto">Innovative solutions for complex mechanical challenges, from concept to production.</p>
+            </div>
+        </section>
+
+        <!-- Service Details -->
+        <section class="py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Product Design</h2>
+                        <p class="mb-4">Our expert team of mechanical engineers specializes in creating innovative and efficient product designs. We work closely with our clients to understand their needs and develop solutions that meet both functional and aesthetic requirements.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Conceptual design and ideation</li>
+                            <li>Design for manufacturability (DFM)</li>
+                            <li>Prototyping and testing</li>
+                            <li>Design optimization</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img src="https://source.unsplash.com/random/800x600?product+design" alt="Product Design" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+
+                <div id="simulation" class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img src="https://source.unsplash.com/random/800x600?3d+modeling" alt="3D Modeling & Simulation" class="w-full h-auto rounded-lg">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">3D Modeling & Simulation</h2>
+                        <p class="mb-4">We utilize cutting-edge 3D modeling and simulation tools to bring your ideas to life and optimize designs before production.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>CAD modeling and drafting</li>
+                            <li>Finite Element Analysis (FEA)</li>
+                            <li>Computational Fluid Dynamics (CFD)</li>
+                            <li>Motion and kinematic analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="analysis" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Structural Analysis</h2>
+                        <p class="mb-4">Our structural analysis services ensure the integrity and safety of your mechanical designs under various loading conditions.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Static and dynamic analysis</li>
+                            <li>Fatigue and fracture mechanics</li>
+                            <li>Thermal stress analysis</li>
+                            <li>Vibration analysis and modal testing</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img src="https://source.unsplash.com/random/800x600?structural+analysis" alt="Structural Analysis" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-12 md:py-16 lg:py-20 bg-primary text-white">
+            <div class="container mx-auto px-4 md:px-6 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Bring Your Mechanical Designs to Life?</h2>
+                <p class="text-lg md:text-xl mb-6 md:mb-8">Contact us today to discuss your project and see how our mechanical engineering expertise can help you succeed.</p>
+                <a href="contact.html" class="bg-white text-primary px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-base md:text-lg hover:bg-gray-200 transition duration-300 inline-block">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-8 md:py-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">TurboTech Engineering</h3>
+                    <p>Innovative solutions for a better future.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                        <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p>123 Engineering Way<br>Tech City, TC 12345<br>Phone: (123) 456-7890<br>Email: info@turbotech.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300">Facebook</a>
+                        <a href="#" class="hover:text-gray-300">Twitter</a>
+                        <a href="#" class="hover:text-gray-300">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2023 TurboTech Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
